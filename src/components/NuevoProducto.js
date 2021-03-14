@@ -6,7 +6,7 @@ const NuevoProducto = () => {
             <div className="col-md-8">
                 <div className="card">
                     <div className="card-body">
-                        <h2 className="text-center mb-4 font-weight-bod">
+                        <h2 className="text-center mb-4 font-weight-bold">
                             Agregar Nuevo Producto
                         </h2>
                         <form>
