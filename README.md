@@ -8,7 +8,7 @@ Proyecto didáctico hecho en React.
 
 ## Descripción
 
-Proyecto CRUD en React, utilizando Redux.
+Proyecto CRUD en React, con Redux. Se utilizó json-server para un fake server y Sweetalert2.
 Se podrá visualizar el ejemplo en producción en [link](https://hardcore-banach-b1ffc1.netlify.app)
 
 ### Tecnologías
