@@ -16,7 +16,7 @@ const Producto = ({producto}) => {
         // preguntar al usuario
 
         // pasarlo al action
-        dispatch( borrarProductoAction (id) );
+        dispatch( borrarProductoAction(id) );
     }
 
     return ( 
