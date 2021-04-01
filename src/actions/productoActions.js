@@ -149,18 +149,27 @@ const obtenerProductoEditarAction = producto => ({
 // Edita un registro en la api y state
 export function editarProductoAction(producto) {
     return async (dispatch) => {
-        dispatch (editarProducto(producto));
+        dispatch( editarProducto() );
 
         try {
-            clienteAxios.put(`/productos/${producto.id}`. producto);
-
+            await clienteAxios.put(`/productos/${producto.id}`, producto);
+            dispatch( editarProductoExito(producto) );
         } catch (error) {
-            
+            console.log(error)
+            dispatch( editarProductoError())
         }
     }
 }
 
-const editarProducto = producto => ({
-    type: COMENZAR_EDICION_PRODUCTO,
+const editarProducto = () => ({
+    type: COMENZAR_EDICION_PRODUCTO
+})
+
+const editarProductoExito = producto => ({
+    type: PRODUCTO_EDITADO_EXITO,
     payload: producto
+})
+const editarProductoError = () => ({
+    type: PRODUCTO_EDITADO_ERROR,
+    payload: true
 })
