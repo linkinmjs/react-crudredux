@@ -153,7 +153,7 @@ export function editarProductoAction(producto) {
 
         try {
             clienteAxios.put(`/productos/${producto.id}`. producto);
-            console.log(resultado);
+
         } catch (error) {
             
         }
