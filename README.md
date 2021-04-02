@@ -29,8 +29,10 @@ Luego de clonar el proyecto, se deberá ejecutar:
 $ npm install
 $ npm start
 ```
-
-
+Para levantar el server, correr:
+```sh
+$ json-server --watch --port=4000 db.json
+```
 
 [node.js]: <https://nodejs.org/>
 [npm]: <https://www.npmjs.com/>

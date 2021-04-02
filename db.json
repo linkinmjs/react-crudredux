@@ -24,6 +24,11 @@
       "nombre": "vodka caro",
       "precio": 800,
       "id": 15
+    },
+    {
+      "nombre": "Último producto",
+      "precio": 150,
+      "id": 16
     }
   ]
 }
